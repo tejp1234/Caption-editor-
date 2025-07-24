@@ -1,5 +1,4 @@
-from bot import BotManager
+from bot import app
 
 if __name__ == "__main__":
-    bot = BotManager()
-    bot.run()
+    app.run()
