@@ -14,7 +14,7 @@ class BotManager:
 
         @self.app.on_message(filters.command("start") & filters.private)
         async def start_command(client, message: Message):
-            await edit_or_reply(message, "👋 Welcome to Caption Remover Bot!
+            await edit_or_reply(message, "👋 Welcome to Caption Remover Bot!\n\nPlease send the Group ID where the caption needs to be modified.")
 
 Please send the **Group ID** where the caption needs to be modified.")
             self.group_id_dict[message.from_user.id] = "WAITING_GROUP_ID"
